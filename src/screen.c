@@ -4478,7 +4478,7 @@ win_line(
 		    save_did_emsg = did_emsg;
 		    did_emsg = FALSE;
 
-		    syntax_attr = get_syntax_attr((colnr_T)v - 1,
+		    syntax_attr = get_syntax_attr((colnr_T)vcol,
 # ifdef FEAT_SPELL
 						has_spell ? &can_spell :
 # endif
