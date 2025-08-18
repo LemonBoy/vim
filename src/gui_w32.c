@@ -3164,17 +3164,6 @@ is_w10_newer_than(unsigned short build_no)
 }
 
     static int
-is_w11_newer_than(unsigned short build_no)
-{
-    static DWORD win_ver = 0;
-
-    if (win_ver == 0)
-	win_ver = get_win_version();
-
-    return win_ver >= MAKE_VER(11U, 0U, build_no);
-}
-
-    static int
 is_high_contrast_theme(int *high_contrast)
 {
 	HIGHCONTRASTW hc;
